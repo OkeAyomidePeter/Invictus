@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Invictus",
+    "slug": "invictus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "invictus",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "icon": "./assets/images/icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ayomidepeteroke.invictus"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/expo.icon/Assets/favicon-dark.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A0A0A",
+          "android": {
+            "image": "./assets/images/splash-icon.png",
+            "imageWidth": 76
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-video",
+      "expo-sharing"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "196c1e13-c686-49c9-af6f-1402c1d32cb8"
+      }
+    }
+  }
+}
